@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumbler</title>
+    <link rel="stylesheet" href="Rumbler.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <h2>Servers</h2>
+            <ul id="server-list">
+                <li onclick="selectServer('general')">General</li>
+                <li onclick="selectServer('gaming')">Gaming</li>
+                <li onclick="selectServer('coding')">Coding</li>
+            </ul>
+        </div>
+        <div id="chat">
+            <div id="chat-header">
+                <h2 id="server-name">General</h2>
+            </div>
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="Rumbler.js"></script>
+</body>
+</html>
